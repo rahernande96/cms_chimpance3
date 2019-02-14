@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+    <title>Administrador - Panacea Hotel Boutique</title>
+
+    <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png" />
 
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="{{ asset('global_assets/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('assets/css/bootstrap_limitless.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/css/bootstrap_limitless.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/layout.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/components.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/css/colors.min.css')}}" rel="stylesheet" type="text/css">
@@ -32,12 +34,12 @@
 <body>
 
     <!-- Main navbar -->
-    <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
-        <div class="navbar-brand">
-            <a href="index.html" class="d-inline-block">
-                <img src="{{ asset('/img/logo_pmz.png') }}" alt="">
-            </a>
-        </div>
+    <div class="navbar navbar-expand-md navbar-dark border-transparent">
+        <div class="navbar-brand wmin-0 mr-5">
+                <a href="{{ route('home') }}" class="d-inline-block">
+                    <img style=" min-height: 50px;" src="{{ asset('img/logo.png') }}" alt="">
+                </a>
+            </div>
 
         
     </div>

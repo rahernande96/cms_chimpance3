@@ -50,7 +50,7 @@
         <!-- Main navbar -->
         <div class="navbar navbar-expand-md navbar-dark border-transparent">
             <div class="navbar-brand wmin-0 mr-5">
-                <a href="index.html" class="d-inline-block">
+                <a href="{{ route('home') }}" class="d-inline-block">
                     <img style=" min-height: 50px;" src="{{ asset('img/logo.png') }}" alt="">
                 </a>
             </div>
