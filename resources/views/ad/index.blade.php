@@ -47,7 +47,7 @@
 
 				<div class="media-body">
 					<h6 class="media-title font-weight-semibold">
-						<a href="#">{{ $ad->title }}</a>
+						<a href="{{ route('anuncios.edit',$ad->id) }}">{{ $ad->title }}</a>
 					</h6>
 
 					{!! $ad->description !!}

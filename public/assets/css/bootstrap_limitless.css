@@ -2059,7 +2059,7 @@ select[size] {
 
 .navbar-dark {
   color: rgba(255, 255, 255, 0.8);
-  background-color: #273246;
+  background-color: #C5263B;
   border-bottom-color: rgba(255, 255, 255, 0.1); }
   .page-header-content + .navbar-dark,
   .content + .navbar-dark,
@@ -2541,7 +2541,7 @@ a.breadcrumb-item, a.breadcrumb-elements-item {
     border-color: #ddd; }
 
 .breadcrumb-line-dark {
-  background-color: #273246;
+  background-color: #C5263B;
   border-color: transparent;
   color: #fff; }
   .page-header-dark .breadcrumb-line-dark:not(.breadcrumb-line-component):last-child {
