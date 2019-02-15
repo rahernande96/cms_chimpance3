@@ -38,7 +38,7 @@
 		<ul class="media-list">
 			@forelse($ads as $ad)
 				
-				<li class="media card-body flex-column flex-sm-row">
+			<li class="media card-body flex-column flex-sm-row">
 				<div class="mr-sm-3 mb-2 mb-sm-0">
 					<a href="#">
 						<img src="{{Storage::disk('public')->url($ad->img)}}" class="rounded" width="44" height="44" alt="">
@@ -74,6 +74,11 @@
 			</li>				
 
 			@empty
+
+			<li class="media card-body flex-column flex-sm-row">
+				Sin Anuncios
+			</li>	
+
 			@endforelse
 			
 

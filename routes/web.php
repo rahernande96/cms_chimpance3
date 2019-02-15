@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
 
 Auth::routes();
 
@@ -28,6 +28,22 @@ Route::get('/register', function(){
 Route::post('/register', function(){
 	return redirect()->route('login');
 });
+
+Route::get('/hotel',function(){
+	return view('hotel');
+})->name('hotel');
+
+Route::get('/habitaciones',function(){
+	return view('habitaciones');
+})->name('habitaciones');
+
+Route::get('/superior',function(){
+	return view('superior');
+})->name('superior');
+
+Route::get('/estandar',function(){
+	return view('estandar');
+})->name('estandar');
 
 Route::group(['middleware' => ['auth']], function () {
     

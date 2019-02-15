@@ -1,95 +1,113 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.site')
 
-        <title>Laravel</title>
+@section('content')
+ <!-- ========== REVOLUTION SLIDER ========== -->
+      <div class="slider">
+        <div id="rev-slider-6" class="rev_slider dotted-slider op8" style="display:none;" data-version="5.4.5">
+          <ul>
+            <!-- SLIDE 1 -->
+            <li data-index="rs-411" data-transition="slideremovedown">
+              <!-- MAIN IMAGE -->
+              <img src="{{ asset('frontend/images/slider/bg-hero.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina="data-no-retina">
+              <!-- LAYER NR. 1 -->
+              <div
+                class="tp-caption tp-resizeme"
+                data-x="center"
+                data-hoffset=""
+                data-y="middle"
+                data-voffset="-40"
+                data-fontsize="['80','60','40','40']"
+                data-lineheight="['62','90','70','60']"
+                data-whitespace="nowrap"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                style="z-index: 99; color: #FED88F; font-weight: 600;font-family:Fira Sans;">HOTEL BOUTIQUE
+              </div>
+              <!-- LAYER NR. 2 -->
+              <div
+                class="tp-caption tp-resizeme"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="middle"
+                data-voffset="['25','25','0','0']"
+                data-fontsize="['35','30','25,'25']"
+                data-lineheight="['43','25','30','30']"
+                data-whitespace="nowrap"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                style="z-index: 11; color: #ffffff; font-weight: 400; ">Villa General Belgrano, Córdoba.
+              </div>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+              <!-- LAYER NR.3 -->
+              <div
+                class="tp-caption tp-resizeme"
+                data-x="['center','center','center','center']"
+                data-hoffset="['18','0','0','0']"
+                data-y="middle"
+                data-voffset="['85','55','45','45']"
+                data-fontsize="['40','35','38,'38']"
+                data-lineheight="['30','25','20','20']"
+                data-whitespace="nowrap"
+                data-responsive_offset="on"
+                data-frames='[{"delay":2400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                style="z-index: 11; color: #333333; font-weight: 400; ">
+                <a href="{{ route('hotel') }}#promocion" class="btn slider">
+                  15% OFF RESERVA ONLINE
+                </a>
+              </div>
+            </li>
+            <!-- SLIDE 2 -->
+            <li data-index="rs-412" data-transition="slideremovedown">
+              <!-- MAIN IMAGE -->
+              <img src="{{ asset('frontend/images/slider/entrada.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina="data-no-retina">
+              <!-- LAYER NR. 1 -->
+              <div
+                class="tp-caption tp-resizeme"
+                data-x="center"
+                data-hoffset=""
+                data-y="middle"
+                data-voffset="-40"
+                data-fontsize="['80','60','40','40']"
+                data-lineheight="['62','90','70','60']"
+                data-whitespace="nowrap"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                style="z-index: 99; color: #FED88F; font-weight: 600;font-family:Fira Sans;">HOTEL BOUTIQUE
+              </div>
+              <!-- LAYER NR. 2 -->
+              <div
+                class="tp-caption tp-resizeme"
+                data-x="['center','center','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="middle"
+                data-voffset="['25','25','0','0']"
+                data-fontsize="['35','30','25,'25']"
+                data-lineheight="['43','25','30','30']"
+                data-whitespace="nowrap"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                style="z-index: 11; color: #ffffff; font-weight: 400; ">Villa General Belgrano, Córdoba.
+              </div>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+              <!-- LAYER NR.3 -->
+              <div
+                class="tp-caption tp-resizeme"
+                data-x="['center','center','center','center']"
+                data-hoffset="['18','0','0','0']"
+                data-y="middle"
+                data-voffset="['85','55','45','45']"
+                data-fontsize="['40','35','38,'38']"
+                data-lineheight="['30','25','20','20']"
+                data-whitespace="nowrap"
+                data-responsive_offset="on"
+                data-frames='[{"delay":2400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                style="z-index: 11; color: #333333; font-weight: 400; ">
+                <a href="{{ route('hotel') }}#promocion" class="btn slider">
+                  15% OFF RESERVA ONLINE
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-    </body>
-</html>
+      </div>
+@endsection
